@@ -459,7 +459,13 @@ if (sidebarOverlay) {
 // ---------- Drucken ----------
 document.getElementById("printAllBtn").addEventListener("click", () => {
   const savedRoute = currentRoute, savedDay = currentDay;
-  let html = "";
+  let html = `<div class="card allow-break" style="margin-bottom:30px;">
+    <h3>🎁 Bonus: Interaktive Web-Version</h3>
+    <p>Als Komplett-Käufer:in habt ihr zusätzlich Zugriff auf die interaktive Web-Version mit
+    klickbaren Sternen und Live-Fortschrittsanzeige — läuft direkt im Browser auf Handy, Tablet
+    oder Computer, keine Installation nötig:</p>
+    <p><a href="https://helena120908.github.io/30-tage-challenge-2-klasse/" target="_blank">https://helena120908.github.io/30-tage-challenge-2-klasse/</a></p>
+  </div>`;
   for (const r of Object.keys(ROUTES)) {
     currentRoute = r;
     for (let d = 1; d <= TOTAL_DAYS; d++) {
